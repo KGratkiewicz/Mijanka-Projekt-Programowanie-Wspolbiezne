@@ -54,8 +54,11 @@ namespace Mijanka
             this.slowBA = new System.Windows.Forms.Button();
             this.labelA = new System.Windows.Forms.Label();
             this.labelB = new System.Windows.Forms.Label();
-            this.domainUpDownBA = new System.Windows.Forms.DomainUpDown();
-            this.buttonSpeedBA = new System.Windows.Forms.Button();
+            this.buttonSuperFast = new System.Windows.Forms.Button();
+            this.buttonFast = new System.Windows.Forms.Button();
+            this.buttonNormal = new System.Windows.Forms.Button();
+            this.buttonSuperSlow = new System.Windows.Forms.Button();
+            this.buttonSlow = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRailA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRailB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDoubleRail)).BeginInit();
@@ -265,31 +268,66 @@ namespace Mijanka
             this.labelB.TabIndex = 18;
             this.labelB.Text = "B";
             // 
-            // domainUpDownBA
+            // buttonSuperFast
             // 
-            this.domainUpDownBA.Location = new System.Drawing.Point(848, 38);
-            this.domainUpDownBA.Name = "domainUpDownBA";
-            this.domainUpDownBA.Size = new System.Drawing.Size(30, 23);
-            this.domainUpDownBA.TabIndex = 19;
-            this.domainUpDownBA.Text = "1";
+            this.buttonSuperFast.Location = new System.Drawing.Point(467, 34);
+            this.buttonSuperFast.Name = "buttonSuperFast";
+            this.buttonSuperFast.Size = new System.Drawing.Size(76, 22);
+            this.buttonSuperFast.TabIndex = 23;
+            this.buttonSuperFast.Text = "super fast";
+            this.buttonSuperFast.UseVisualStyleBackColor = true;
+            this.buttonSuperFast.Click += new System.EventHandler(this.buttonSuperFast_Click);
             // 
-            // buttonSpeedBA
+            // buttonFast
             // 
-            this.buttonSpeedBA.Location = new System.Drawing.Point(884, 39);
-            this.buttonSpeedBA.Name = "buttonSpeedBA";
-            this.buttonSpeedBA.Size = new System.Drawing.Size(76, 22);
-            this.buttonSpeedBA.TabIndex = 20;
-            this.buttonSpeedBA.Text = "speed";
-            this.buttonSpeedBA.UseVisualStyleBackColor = true;
-            this.buttonSpeedBA.Click += new System.EventHandler(this.buttonSpeedBA_Click);
+            this.buttonFast.Location = new System.Drawing.Point(467, 62);
+            this.buttonFast.Name = "buttonFast";
+            this.buttonFast.Size = new System.Drawing.Size(76, 22);
+            this.buttonFast.TabIndex = 22;
+            this.buttonFast.Text = "fast";
+            this.buttonFast.UseVisualStyleBackColor = true;
+            this.buttonFast.Click += new System.EventHandler(this.buttonFast_Click);
+            // 
+            // buttonNormal
+            // 
+            this.buttonNormal.Location = new System.Drawing.Point(467, 90);
+            this.buttonNormal.Name = "buttonNormal";
+            this.buttonNormal.Size = new System.Drawing.Size(76, 22);
+            this.buttonNormal.TabIndex = 21;
+            this.buttonNormal.Text = "normal";
+            this.buttonNormal.UseVisualStyleBackColor = true;
+            this.buttonNormal.Click += new System.EventHandler(this.buttonNormal_Click);
+            // 
+            // buttonSuperSlow
+            // 
+            this.buttonSuperSlow.Location = new System.Drawing.Point(467, 146);
+            this.buttonSuperSlow.Name = "buttonSuperSlow";
+            this.buttonSuperSlow.Size = new System.Drawing.Size(76, 23);
+            this.buttonSuperSlow.TabIndex = 20;
+            this.buttonSuperSlow.Text = "super slow";
+            this.buttonSuperSlow.UseVisualStyleBackColor = true;
+            this.buttonSuperSlow.Click += new System.EventHandler(this.buttonSuperSlow_Click);
+            // 
+            // buttonSlow
+            // 
+            this.buttonSlow.Location = new System.Drawing.Point(467, 118);
+            this.buttonSlow.Name = "buttonSlow";
+            this.buttonSlow.Size = new System.Drawing.Size(76, 22);
+            this.buttonSlow.TabIndex = 19;
+            this.buttonSlow.Text = "slow";
+            this.buttonSlow.UseVisualStyleBackColor = true;
+            this.buttonSlow.Click += new System.EventHandler(this.buttonSlow_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 357);
-            this.Controls.Add(this.buttonSpeedBA);
-            this.Controls.Add(this.domainUpDownBA);
+            this.ClientSize = new System.Drawing.Size(984, 361);
+            this.Controls.Add(this.buttonSuperFast);
+            this.Controls.Add(this.buttonFast);
+            this.Controls.Add(this.buttonNormal);
+            this.Controls.Add(this.buttonSuperSlow);
+            this.Controls.Add(this.buttonSlow);
             this.Controls.Add(this.labelB);
             this.Controls.Add(this.labelA);
             this.Controls.Add(this.superFastBA);
@@ -311,7 +349,6 @@ namespace Mijanka
             this.Controls.Add(this.pictureRailA);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureRailA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRailB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDoubleRail)).EndInit();
@@ -346,8 +383,11 @@ namespace Mijanka
         private System.Windows.Forms.Button slowBA;
         private System.Windows.Forms.Label labelA;
         private System.Windows.Forms.Label labelB;
-        private System.Windows.Forms.DomainUpDown domainUpDownBA;
-        private System.Windows.Forms.Button buttonSpeedBA;
+        private System.Windows.Forms.Button buttonSuperFast;
+        private System.Windows.Forms.Button buttonFast;
+        private System.Windows.Forms.Button buttonNormal;
+        private System.Windows.Forms.Button buttonSuperSlow;
+        private System.Windows.Forms.Button buttonSlow;
     }
 }
 

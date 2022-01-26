@@ -13,26 +13,25 @@ using static FractionAB;
 
 namespace Mijanka
 {
+    
     public partial class Form1 : Form
     {
+        private int simulationSpeed;
         private FractionAB fractionAB;
         private Train trainA;
         private Train trainB;
         private Train trainUp;
         private Train trainDown;
-        private int speedAB;
-        private int speedBA;
 
         public Form1()
         {
+            this.simulationSpeed = 5;
             this.trainA = null;
             this.trainB = null;
             this.trainUp = null;
             this.trainDown = null;
             InitializeComponent();
             this.fractionAB = new FractionAB();
-            this.speedAB = 1;
-            this.speedBA = 1;
             //this.fractionAB.Simulation();
         }
 
@@ -178,17 +177,34 @@ namespace Mijanka
             this.fractionAB.createNewTrain(-5);
         }
 
-        private void buttonSpeedBA_Click(object sender, EventArgs e)
+        private void buttonSuperFast_Click(object sender, EventArgs e)
         {
-            int speed = int.Parse(this.domainUpDownBA.Text);
-            this.fractionAB.createNewTrain(speed);
+            this.fractionAB.createNewTrain(20);
+            this.fractionAB.createNewTrain(-20);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void buttonFast_Click(object sender, EventArgs e)
         {
-            DomainUpDownItemCollection BAspeed = this.domainUpDownBA.Items;
-            BAspeed.Add((this.speedBA += 1).ToString());
+            this.fractionAB.createNewTrain(15);
+            this.fractionAB.createNewTrain(-15);
+        }
 
+        private void buttonNormal_Click(object sender, EventArgs e)
+        {
+            this.fractionAB.createNewTrain(12);
+            this.fractionAB.createNewTrain(-12);
+        }
+
+        private void buttonSlow_Click(object sender, EventArgs e)
+        {
+            this.fractionAB.createNewTrain(10);
+            this.fractionAB.createNewTrain(-10);
+        }
+
+        private void buttonSuperSlow_Click(object sender, EventArgs e)
+        {
+            this.fractionAB.createNewTrain(5);
+            this.fractionAB.createNewTrain(-5);
         }
     }    
 }

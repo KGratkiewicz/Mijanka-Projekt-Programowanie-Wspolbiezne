@@ -13,10 +13,10 @@ public class FractionAB
 	private DoubleRail doubleRail;
 	private SingleRail railB;
 	private int delay;
-	public FractionAB()
+	public FractionAB(int delay = 100)
 	{
 		this.trains = new SemaphoreSlim(2, 2);
-		this.delay = 100;
+		this.delay = delay;
 		this.railA = new SingleRail(300);
 		this.doubleRail = new DoubleRail(300);
 		this.railB = new SingleRail(300);
@@ -29,6 +29,11 @@ public class FractionAB
 		this.createNewTrain(-10);
 		this.createNewTrain(-25);
 	}
+
+	public void changeSimulationSpeed(int delay)
+    {
+		this.delay = delay;
+    }
 
 	public SingleRail getRailA()
     {
