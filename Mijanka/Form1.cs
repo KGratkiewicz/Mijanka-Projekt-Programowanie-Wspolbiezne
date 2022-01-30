@@ -37,10 +37,10 @@ namespace Mijanka
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.trainA = this.fractionAB.getRailA().getTrain();
-            this.trainB = this.fractionAB.getRailB().getTrain();
-            this.trainUp = this.fractionAB.getDoubleRail().getTrainUp();
-            this.trainDown = this.fractionAB.getDoubleRail().getTrainDown();
+            this.trainA = this.fractionAB.getRailA().getTrain()?.Clone();
+            this.trainB = this.fractionAB.getRailB().getTrain()?.Clone();
+            this.trainUp = this.fractionAB.getDoubleRail().getTrainUp()?.Clone();
+            this.trainDown = this.fractionAB.getDoubleRail().getTrainDown()?.Clone();
 
             if (this.trainA != null)
             {
@@ -77,6 +77,9 @@ namespace Mijanka
             {
                 this.turnOffTrainDown();
             }
+
+            this.BATrains.Text = Train.populationBA.ToString();
+            this.ABTrains.Text = Train.populationAB.ToString();
         }
 
         private void setLocationOfTrainA(int location, int size)
@@ -206,5 +209,16 @@ namespace Mijanka
             this.fractionAB.createNewTrain(5);
             this.fractionAB.createNewTrain(-5);
         }
+
+        private void randTrain(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            for (int i=0; i<10; i++)
+            {
+                this.fractionAB.createNewTrain(rnd.Next(3, 22));
+                this.fractionAB.createNewTrain(rnd.Next(-22, -3));
+            }
+        }
+
     }    
 }

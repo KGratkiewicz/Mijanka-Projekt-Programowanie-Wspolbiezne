@@ -63,9 +63,9 @@ public class FractionAB
 
 	private void threadTrainFunction(Object speed)
     {
-		this.trains.Wait();
 		Train newTrain = new Train((int)speed);
-		if(newTrain.getSpeed() > 0)
+		this.trains.Wait();
+		if (newTrain.getSpeed() > 0)
         {
 			goAB(newTrain);
         }

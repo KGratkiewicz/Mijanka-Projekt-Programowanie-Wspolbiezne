@@ -59,6 +59,34 @@ namespace Mijanka
             this.buttonNormal = new System.Windows.Forms.Button();
             this.buttonSuperSlow = new System.Windows.Forms.Button();
             this.buttonSlow = new System.Windows.Forms.Button();
+            this.buttonRandom10 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.ABTrains = new System.Windows.Forms.Label();
+            this.BATrains = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRailA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRailB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDoubleRail)).BeginInit();
@@ -66,6 +94,10 @@ namespace Mijanka
             ((System.ComponentModel.ISupportInitialize)(this.pictureTrainUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureTrainDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureTrainB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureRailA
@@ -148,7 +180,7 @@ namespace Mijanka
             // 
             // slowAB
             // 
-            this.slowAB.Location = new System.Drawing.Point(40, 151);
+            this.slowAB.Location = new System.Drawing.Point(68, 151);
             this.slowAB.Name = "slowAB";
             this.slowAB.Size = new System.Drawing.Size(76, 22);
             this.slowAB.TabIndex = 7;
@@ -158,7 +190,7 @@ namespace Mijanka
             // 
             // superSlowAB
             // 
-            this.superSlowAB.Location = new System.Drawing.Point(40, 179);
+            this.superSlowAB.Location = new System.Drawing.Point(68, 179);
             this.superSlowAB.Name = "superSlowAB";
             this.superSlowAB.Size = new System.Drawing.Size(76, 22);
             this.superSlowAB.TabIndex = 8;
@@ -168,7 +200,7 @@ namespace Mijanka
             // 
             // normalAB
             // 
-            this.normalAB.Location = new System.Drawing.Point(40, 123);
+            this.normalAB.Location = new System.Drawing.Point(68, 123);
             this.normalAB.Name = "normalAB";
             this.normalAB.Size = new System.Drawing.Size(76, 22);
             this.normalAB.TabIndex = 9;
@@ -178,7 +210,7 @@ namespace Mijanka
             // 
             // fastAB
             // 
-            this.fastAB.Location = new System.Drawing.Point(40, 95);
+            this.fastAB.Location = new System.Drawing.Point(68, 95);
             this.fastAB.Name = "fastAB";
             this.fastAB.Size = new System.Drawing.Size(76, 22);
             this.fastAB.TabIndex = 10;
@@ -188,7 +220,7 @@ namespace Mijanka
             // 
             // superFastAB
             // 
-            this.superFastAB.Location = new System.Drawing.Point(40, 67);
+            this.superFastAB.Location = new System.Drawing.Point(68, 67);
             this.superFastAB.Name = "superFastAB";
             this.superFastAB.Size = new System.Drawing.Size(76, 22);
             this.superFastAB.TabIndex = 11;
@@ -198,7 +230,7 @@ namespace Mijanka
             // 
             // superFastBA
             // 
-            this.superFastBA.Location = new System.Drawing.Point(884, 67);
+            this.superFastBA.Location = new System.Drawing.Point(710, 67);
             this.superFastBA.Name = "superFastBA";
             this.superFastBA.Size = new System.Drawing.Size(76, 22);
             this.superFastBA.TabIndex = 16;
@@ -208,7 +240,7 @@ namespace Mijanka
             // 
             // fastBA
             // 
-            this.fastBA.Location = new System.Drawing.Point(884, 95);
+            this.fastBA.Location = new System.Drawing.Point(710, 95);
             this.fastBA.Name = "fastBA";
             this.fastBA.Size = new System.Drawing.Size(76, 22);
             this.fastBA.TabIndex = 15;
@@ -218,7 +250,7 @@ namespace Mijanka
             // 
             // normalBA
             // 
-            this.normalBA.Location = new System.Drawing.Point(884, 123);
+            this.normalBA.Location = new System.Drawing.Point(710, 123);
             this.normalBA.Name = "normalBA";
             this.normalBA.Size = new System.Drawing.Size(76, 22);
             this.normalBA.TabIndex = 14;
@@ -228,7 +260,7 @@ namespace Mijanka
             // 
             // superSlowBA
             // 
-            this.superSlowBA.Location = new System.Drawing.Point(884, 179);
+            this.superSlowBA.Location = new System.Drawing.Point(710, 179);
             this.superSlowBA.Name = "superSlowBA";
             this.superSlowBA.Size = new System.Drawing.Size(76, 23);
             this.superSlowBA.TabIndex = 13;
@@ -238,7 +270,7 @@ namespace Mijanka
             // 
             // slowBA
             // 
-            this.slowBA.Location = new System.Drawing.Point(884, 151);
+            this.slowBA.Location = new System.Drawing.Point(710, 151);
             this.slowBA.Name = "slowBA";
             this.slowBA.Size = new System.Drawing.Size(76, 22);
             this.slowBA.TabIndex = 12;
@@ -270,7 +302,7 @@ namespace Mijanka
             // 
             // buttonSuperFast
             // 
-            this.buttonSuperFast.Location = new System.Drawing.Point(467, 34);
+            this.buttonSuperFast.Location = new System.Drawing.Point(389, 51);
             this.buttonSuperFast.Name = "buttonSuperFast";
             this.buttonSuperFast.Size = new System.Drawing.Size(76, 22);
             this.buttonSuperFast.TabIndex = 23;
@@ -280,7 +312,7 @@ namespace Mijanka
             // 
             // buttonFast
             // 
-            this.buttonFast.Location = new System.Drawing.Point(467, 62);
+            this.buttonFast.Location = new System.Drawing.Point(389, 79);
             this.buttonFast.Name = "buttonFast";
             this.buttonFast.Size = new System.Drawing.Size(76, 22);
             this.buttonFast.TabIndex = 22;
@@ -290,7 +322,7 @@ namespace Mijanka
             // 
             // buttonNormal
             // 
-            this.buttonNormal.Location = new System.Drawing.Point(467, 90);
+            this.buttonNormal.Location = new System.Drawing.Point(389, 107);
             this.buttonNormal.Name = "buttonNormal";
             this.buttonNormal.Size = new System.Drawing.Size(76, 22);
             this.buttonNormal.TabIndex = 21;
@@ -300,7 +332,7 @@ namespace Mijanka
             // 
             // buttonSuperSlow
             // 
-            this.buttonSuperSlow.Location = new System.Drawing.Point(467, 146);
+            this.buttonSuperSlow.Location = new System.Drawing.Point(389, 163);
             this.buttonSuperSlow.Name = "buttonSuperSlow";
             this.buttonSuperSlow.Size = new System.Drawing.Size(76, 23);
             this.buttonSuperSlow.TabIndex = 20;
@@ -310,7 +342,7 @@ namespace Mijanka
             // 
             // buttonSlow
             // 
-            this.buttonSlow.Location = new System.Drawing.Point(467, 118);
+            this.buttonSlow.Location = new System.Drawing.Point(389, 135);
             this.buttonSlow.Name = "buttonSlow";
             this.buttonSlow.Size = new System.Drawing.Size(76, 22);
             this.buttonSlow.TabIndex = 19;
@@ -318,11 +350,281 @@ namespace Mijanka
             this.buttonSlow.UseVisualStyleBackColor = true;
             this.buttonSlow.Click += new System.EventHandler(this.buttonSlow_Click);
             // 
+            // buttonRandom10
+            // 
+            this.buttonRandom10.Location = new System.Drawing.Point(415, 297);
+            this.buttonRandom10.Name = "buttonRandom10";
+            this.buttonRandom10.Size = new System.Drawing.Size(170, 52);
+            this.buttonRandom10.TabIndex = 24;
+            this.buttonRandom10.Text = "Symulacja";
+            this.buttonRandom10.UseVisualStyleBackColor = true;
+            this.buttonRandom10.Click += new System.EventHandler(this.randTrain);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(68, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(187, 21);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Nowy pociąg na trasie AB";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pictureBox1.Location = new System.Drawing.Point(40, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(259, 190);
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(150, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(133, 15);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Przejazd z prędkością 20";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(150, 99);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(133, 15);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Przejazd z prędkością 15";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(150, 127);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(133, 15);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Przejazd z prędkością 12";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(150, 155);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(133, 15);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Przejazd z prędkością 10";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(150, 183);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(127, 15);
+            this.label6.TabIndex = 32;
+            this.label6.Text = "Przejazd z prędkością 5";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(808, 183);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(127, 15);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "Przejazd z prędkością 5";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(808, 155);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(133, 15);
+            this.label8.TabIndex = 38;
+            this.label8.Text = "Przejazd z prędkością 10";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(808, 127);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(133, 15);
+            this.label9.TabIndex = 37;
+            this.label9.Text = "Przejazd z prędkością 12";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(808, 99);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(133, 15);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Przejazd z prędkością 15";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(808, 71);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(133, 15);
+            this.label11.TabIndex = 35;
+            this.label11.Text = "Przejazd z prędkością 20";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(726, 28);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(187, 21);
+            this.label12.TabIndex = 33;
+            this.label12.Text = "Nowy pociąg na trasie BA";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pictureBox2.Location = new System.Drawing.Point(698, 18);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(259, 190);
+            this.pictureBox2.TabIndex = 34;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(488, 167);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(127, 15);
+            this.label13.TabIndex = 46;
+            this.label13.Text = "Przejazd z prędkością 5";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(488, 139);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(133, 15);
+            this.label14.TabIndex = 45;
+            this.label14.Text = "Przejazd z prędkością 10";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(488, 111);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(133, 15);
+            this.label15.TabIndex = 44;
+            this.label15.Text = "Przejazd z prędkością 12";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(488, 83);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(133, 15);
+            this.label16.TabIndex = 43;
+            this.label16.Text = "Przejazd z prędkością 15";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(488, 55);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(133, 15);
+            this.label17.TabIndex = 42;
+            this.label17.Text = "Przejazd z prędkością 20";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(406, 12);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(218, 21);
+            this.label18.TabIndex = 40;
+            this.label18.Text = "Nowy pociąg na trasie AB i BA";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pictureBox3.Location = new System.Drawing.Point(378, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(259, 190);
+            this.pictureBox3.TabIndex = 41;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pictureBox4.Location = new System.Drawing.Point(284, 265);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(438, 92);
+            this.pictureBox4.TabIndex = 47;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label19.Location = new System.Drawing.Point(295, 270);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(417, 21);
+            this.label19.TabIndex = 48;
+            this.label19.Text = "10 nowych pociągów na trasie AB i BA z losową prędkością";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(12, 297);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(101, 15);
+            this.label20.TabIndex = 49;
+            this.label20.Text = "Liczba pociągów: ";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(859, 297);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(101, 15);
+            this.label21.TabIndex = 50;
+            this.label21.Text = "Liczba pociągów: ";
+            // 
+            // ABTrains
+            // 
+            this.ABTrains.AutoSize = true;
+            this.ABTrains.Location = new System.Drawing.Point(110, 297);
+            this.ABTrains.Name = "ABTrains";
+            this.ABTrains.Size = new System.Drawing.Size(13, 15);
+            this.ABTrains.TabIndex = 51;
+            this.ABTrains.Text = "0";
+            // 
+            // BATrains
+            // 
+            this.BATrains.AutoSize = true;
+            this.BATrains.Location = new System.Drawing.Point(959, 297);
+            this.BATrains.Name = "BATrains";
+            this.BATrains.Size = new System.Drawing.Size(13, 15);
+            this.BATrains.TabIndex = 52;
+            this.BATrains.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(984, 361);
+            this.Controls.Add(this.BATrains);
+            this.Controls.Add(this.ABTrains);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.buttonRandom10);
             this.Controls.Add(this.buttonSuperFast);
             this.Controls.Add(this.buttonFast);
             this.Controls.Add(this.buttonNormal);
@@ -347,8 +649,24 @@ namespace Mijanka
             this.Controls.Add(this.pictureDoubleRail);
             this.Controls.Add(this.pictureRailB);
             this.Controls.Add(this.pictureRailA);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Mijanka - projekt z programowania współbieżnego";
             ((System.ComponentModel.ISupportInitialize)(this.pictureRailA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRailB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDoubleRail)).EndInit();
@@ -356,6 +674,10 @@ namespace Mijanka
             ((System.ComponentModel.ISupportInitialize)(this.pictureTrainUp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureTrainDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureTrainB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,6 +710,34 @@ namespace Mijanka
         private System.Windows.Forms.Button buttonNormal;
         private System.Windows.Forms.Button buttonSuperSlow;
         private System.Windows.Forms.Button buttonSlow;
+        private System.Windows.Forms.Button buttonRandom10;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label ABTrains;
+        private System.Windows.Forms.Label BATrains;
     }
 }
 

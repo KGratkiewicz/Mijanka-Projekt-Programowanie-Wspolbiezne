@@ -6,11 +6,26 @@ public class Train
 	private int speed;
 	private int location;
 	private Rail rail;
+	public static int populationAB;
+	public static int populationBA;
 	public Train(int speed = 1)
 	{
-		this.speed = speed;
+		this.speed = (speed == 0) ? 1 : speed;
 		this.location = 0;
+		if (this.speed > 0)
+		{
+			Train.populationAB++;
+		}
+		else
+		{
+			Train.populationBA++;
+		}
 	}
+
+	public Train Clone()
+    {
+		return (Train)MemberwiseClone();
+    }
 
 	public int getSpeed()
 	{
@@ -32,8 +47,16 @@ public class Train
 		rail.putTheTrain(this);
 		this.rail = rail;
 		this.location = (this.speed > 0) ? 0 : this.rail.getLength();
-		
-    }
+		if (this.speed > 0)
+		{
+			Train.populationAB--;
+		}
+		else
+		{
+			Train.populationBA--;
+		}
+
+	}
 
 	public void getOnTheNextRail(Rail nextRail)
 	{
@@ -49,6 +72,7 @@ public class Train
     {
 		this.rail.popTheTrain(this);
 		this.rail = null;
+		
     }
 
 	public void rideRail(int delay)
